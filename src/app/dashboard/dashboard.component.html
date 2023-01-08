@@ -1,0 +1,6 @@
+<h2
+  class="mb-2 text-5xl font-bold tracking-tight text-gray-800 dark:text-white"
+>
+  Ads
+</h2>
+<app-ad-list *ngIf="adService.ads$ | async as ads" [ads]="ads"></app-ad-list>

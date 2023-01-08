@@ -1,0 +1,23 @@
+<nav class="bg-gray-800 block">
+  <div class="mx-auto max-w-7xl px-8">
+    <!-- Container -->
+    <div class="relative flex h-16 items-center justify-between">
+      <!-- Items -->
+      <div class="flex flex-1 items-stretch justify-start">
+        <!-- Links -->
+        <div class="ml-auto">
+          <div class="flex space-x-4">
+            <a
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              *ngFor="let link of links"
+              [routerLink]="link.route"
+              routerLinkActive="active"
+            >
+              {{ link.text }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
